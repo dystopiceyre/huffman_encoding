@@ -29,5 +29,8 @@ public class Main {
             System.out.println(freq.getKey() + "-> " +freq.getValue());
             minHeap.add(new HuffmanNode(freq.getKey(), freq.getValue()));
         }
+        while (minHeap.size() > 0) {
+            System.out.println(minHeap.poll().toString());
+        }
     }
 }
